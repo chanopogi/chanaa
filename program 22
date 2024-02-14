@@ -1,0 +1,81 @@
+#include<iostream>
+using namespace std;
+
+void add();
+void sub();
+void mul();
+void div();
+void mod();
+
+int num1, num2;
+float ans;
+
+int main(){
+int ch;
+
+	do{
+		cout<<"\n\t\t<<< program  of operations>>>";
+		cout<<"\n\n1.\taddition.\n2.\tsubtraction\n3.\tmultiplication\n4.\tdivision\n6.\texit\n";
+		cout<<"\nenter your choice:";
+		cin>>ch;
+	
+	switch(ch){
+		case 1:
+			add();
+			break;
+		case 2:
+			sub();
+			break;
+		case 3:
+			mul();
+			break;
+		case 4:
+			div();
+			break;
+		case 5:
+			mod();
+			break;
+		case 6:
+			return 0;
+		default:
+			cout<<"\n\ninvalid input. please try again.\n";
+		
+		}
+	}while(ch!= 6);
+}
+
+void add(){
+	cout<<"\nenter two numbers to add:";
+	cin>>num1>>num2;
+	ans = num1 + num2;
+	cout<<"\nsum is "<<ans<<"\n";
+}
+
+void sub(){
+	cout<<"\nenter two numbers to subtract:";
+	cin>>num1>>num2;
+	ans = num1 - num2;
+	cout<<"\ndifference is "<<ans<<"\n";
+}
+
+void mul(){
+	cout<<"\nenter two numbers to multiply:";
+	cin>>num1>>num2;
+	ans = num1 * num2;
+	
+	cout<<"\nproduct is "<<ans<<"\n";
+}
+
+void div(){
+	cout<<"\nenter two numbers to divide:";
+	cin>>num1>>num2;
+	ans = (float)num1 / num2;
+	cout<<"\nqoutient is "<<ans<<"\n";
+}
+
+void mod(){
+	cout<<"\nenter two number to modulus:";
+	cin>>num1>>num2;
+	ans = num1 % num2;
+	cout<<"\n remainder is "<<ans<<"\n";
+}
