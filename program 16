@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int num1;
+	cout<<"enter a number:";
+	cin>>num1;
+	cout<<"\nvalue before being incremented:"<<num1<<"\n";
+	num1++;
+	cout<<"value after being incrementd:"<<num1<<"\n";
+	num1--;
+	cout<<"value before being decremented:"<<num1<<"\n";
+	num1--;
+	cout<<"value after being decrementd:"<<num1<<"\n";
+}
