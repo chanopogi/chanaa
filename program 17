@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	char input;
+	cout<<"enter a character:";
+	cin>>input;
+	if((input>= 'a'&& input <= 'z')||(input >= 'A'&& input<= 'Z'))
+		cout<<"you have entered a character.\n";
+	else
+		cout<<"invalid inpu.\n";
+		
+}
