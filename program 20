@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int mark;
+	
+do{
+	cout<<"enter grade:";
+	cin>>mark;
+	
+	if(mark > 49 && mark <= 100)
+		cout<<"you have passed.\n\n";
+	else if(mark >= 0 && mark <=49)
+		cout<<"you failed.\n\n";
+	else 
+		cout<<"wrong input.please try again.\n\n";
+}while(mark < 0|| mark >100);
+}
