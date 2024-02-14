@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int marks,sum = 0, i = 0;
+	float ave;
+	
+	while (true){
+		cout<<"enter grade:";
+		cin>>marks;
+		
+		if(marks < 0 || marks > 100)
+			break;
+			
+		sum = sum + marks;
+		i++;
+	}
+	cout<<"value of counter:"<<i<<"\ntotal sum is "<<sum<<"\n";
+	ave = (float)sum / i;
+	cout<<"average is "<<ave;
+}
