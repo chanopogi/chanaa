@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main() {
+	int num;
+	srand (time(NULL));
+	
+	for(int x=0; x <10; x++) {
+		num=rand();
+		cout<<"NUM #"<<x<<":"<<num<<endl;
+	}
+}
