@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main(){
+	char x[] = "Happy Birthda To you";
+	char y[25], z[15];
+	
+	cout<<"The String In Array x is:"<<x
+	<<"\nThe String In Array y is: "<<strcpy(y, x)
+	<<'\n';
+	
+	strncpy(z, x, 14);
+	z[14] = '\0';
+	
+	cout<<" The String In Array z is: "<<z<<endl;
+	
+	return 0;
+}
