@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class GradeBook {
+	public:
+		void showMessage (string CourseName){
+			cout<<"Welcome To Grade Book:"<<CourseName<<endl;
+			
+		}
+	};
+
+int main(){
+	string nameOfCourse;
+	GradeBook MyGradeBookobj;
+	cout<<"Enter Course Name: ";
+	getline(cin, nameOfCourse);
+	cout<<endl;
+	 MyGradeBookobj.showMessage(nameOfCourse);
+	 
+}
