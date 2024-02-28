@@ -1,0 +1,12 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main() {
+	string mystring;
+	mystring = "This Is The Initial String Content ";
+	cout<<mystring<<endl;
+	mystring ="This Is A Different String Content";
+	cout<<mystring<<endl;
+	return 0;
+}
