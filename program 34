@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main() {
+	char string1[] = "abcdefghijklmnopqrstuvwxyz";
+	char string2[] = "four";
+	char string3[] = "Boston";
+	
+	cout<<"The Length Of "<<string1
+	<<"Is " << strlen(string1)
+	<<"\nThe Lenght Of "<<string2
+	<<" Is "<< strlen(string2)
+	<<"\nThe Lenght Of "<<string3
+	<<"is " << strlen(string3) <<endl;
+	
+	return 0;
+}
