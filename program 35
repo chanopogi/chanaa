@@ -1,0 +1,15 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main() {
+	string mystr;
+	cout<<"What's Your Name? ";
+	getline(cin, mystr);
+	cout<<"Hello "<<mystr<< ".\n";
+	cout<<"What Is Your Favorite Teams? ";
+	getline(cin, mystr);
+	cout<< "I Like " <<mystr<< "tool\n";
+	
+	return 0;
+}
