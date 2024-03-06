@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int p, *ptr, size;
+	
+	ptr = &p;
+	
+	cout<<"Enter an integer:";
+	cin>>*ptr;
+	cin.ignore();
+	
+	size = sizeof(*ptr);
+	
+	cout<<"\nValue: "<<*ptr;
+	cout<<"\nAddress: "<<size<<"\n";
+	cout<<"\nSize in bytes: "<<size<< "\n";
+	
+	return 0;
+	
+}
