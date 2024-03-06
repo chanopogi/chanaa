@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+struct nameType {
+	char first [10];
+	char middleInitial;
+	char last[20];
+};
+
+nameType inputSingle ();
+
+int main(){
+	nameType sname, ename[3], currentName;
+	cout<<"******* Input Single ******* \n";
+	sname = inputSingle();
+	cout<<sname.first<<" "<<sname.middleInitial<<"."<<sname.last<<"\n";
+	
+	cout<<"******* Display Single ******* \n";
+	cout<<sname.first<<" "<<sname.middleInitial<<"."<<sname.last<<"\n";
+	
+	cout<<"******* Input Many *******\n";
+	for(int index = 0; index < 3; index++) {
+		cout<<"#"<<index<<"\n";
+		ename[index] = inputSingle();
+	}
+	cout<<"******* Display Many *******\n";
+	
+	for(int index = 0; index < 3; index++){
+		currentName = ename[index];
+		cout<<currentName.first<<" "<<currentName.middleInitial<<"..."<<currentName.last<<"\n";
+		
+	}
+}
+
+nameType inputSingle(){
+	nameType name;
+	cout<<"Enter Your First Name:";
+	cin>>name.first;
+	cout<<"Enter Your Middle Initial:";
+	cin>>name.middleInitial;
+	cin.ignore();
+	cout<<"Enter your last name:";
+	cin>>name.last;
+	return name;
+}
