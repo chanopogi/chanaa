@@ -1,0 +1,34 @@
+
+>> Main.java <<
+
+public class Main{
+   public static void main(String[] args){
+     Cat catObject = new Cat(4000, 3);
+     System.out.println(catObject.jump());
+     System.out.println("WEIGHT: " + catObject.weight);
+   }
+ }
+
+>> Animal.java <<
+
+class Animal{
+  public int weight;
+
+  public Animal (int weight){
+    this.weight = weight;
+  }
+}
+
+>> Cat.java <<
+
+ class Cat extends Animal{
+   public int age;
+
+   public Cat(int weight, int age){
+     super (weight);
+     this.age = age;
+   }
+   public String jump(){
+     return"cat's jump executed";
+   }
+ }
