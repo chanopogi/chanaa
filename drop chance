@@ -1,0 +1,41 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random rand = new Random();
+
+        System.out.print("Enter the number of items: ");
+        int itemCount = scanner.nextInt();
+        scanner.nextLine();
+
+        String[] items = new String[itemCount];
+        int[] dropRates = new int[itemCount];
+
+        for (int i = 0; i < itemCount; i++) {
+            System.out.print("Enter the name of item " + (i + 1) + ": ");
+            items[i] = scanner.nextLine();
+
+            System.out.print("Enter the drop rate for " + items[i] + " (0-100): ");
+            dropRates[i] = scanner.nextInt();
+            scanner.nextLine(); 
+        }
+
+        System.out.println("\nSimulating drops...");
+        for (int i = 0; i < items.length; i++) {
+            if (checkDrop(rand, dropRates[i])) {
+                System.out.println(items[i] + " has dropped!");
+            } else {
+                System.out.println(items[i] + " did not drop.");
+            }
+        }
+
+        scanner.close();
+    }
+
+    public static boolean checkDrop(Random rand, int dropRate) {
+        int chance = rand.nextInt(100); 
+        return chance < dropRate; 
+    }
+}
